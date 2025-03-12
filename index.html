@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Arabia | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Checkbox for toggling menu -->
+        <input type="checkbox" id="check">
+        <!-- Menu icon -->
+        <label for="check" class="checkbtn">
+            <div class="container" onclick="toggleNav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </label>
+        <!-- Site logo -->
+        <label class="logo">
+            <img src="img/Charlesarabia-logo.png" alt="Main Logo" class="logo">
+        </label>
+        <!-- Navigation links -->
+        <ul id="nav">
+            <li><a href="#hero" onclick="closeNav()">Home</a></li>
+            <li><a href="#about" onclick="closeNav()">About</a></li>
+            <li><a href="#works" onclick="closeNav()">Projects</a></li>
+            <li><a href="#services" onclick="closeNav()">Service</a></li>
+            <li><a class="active" href="#contact" onclick="closeNav()">Contact</a></li>
+            <div class="soc-med-nav">
+                <p>Follow me on</p>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </ul>
+    </nav>
+    <div class="section" id="hero">
+        <div class="hero-container">
+            <div class="hero-intro">
+                <h1>Welcome to My Profile</h1>
+                <p>Hello, I'm Charles Arabia, a Web Designer and Developer.</p>
+            </div>
+        </div>
+
+        <div class="blur-design"></div>
+        <div class="blur-design1"></div>
+        <div class="blur-design2"></div>
+        <div class="blur-design3"></div>
+        <div class="blur-design4"></div>
+        <div class="blur-design5"></div>
+        <div class="blur-design6"></div>
+        <div class="blur-design7"></div>
+    </div>
+    <div class="section" id="about">
+        <div class="about-container">
+            <div class="popup-aboutme" id="aboutme-message">
+                <button class="exit-popup-aboutme" onclick="ExitMessage()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div class="popup-main">
+                    <div class="popup-grid">
+                        <div class="popup-item">
+                            <div class="popup-image" alt=""></div>
+                            <div class="pop-soc">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="popup-item popup-right">
+                            <h2>More About Me</h2>
+                            <p>One of my favorite things is sitting down with a cup of coffee to code and design. I started seven years ago, learning the basics of building websites, but quickly realized they looked plain. That’s when I decided to dive into design, balancing both coding and aesthetics to create something functional and visually appealing. <br><br> It’s not always easy there are days when I hit a wall, feel bored, or just can’t seem to get things right, especially without coffee to keep me going. But the satisfaction of seeing my work come together, whether it’s a sleek design or a piece of code that runs perfectly, makes it all worth it. I love how coding and design blend logic and creativity, letting me express myself while constantly learning and growing. It’s challenging, but it’s also a lot of fun.</p>
+                        </div>
+                    </div>
+                    <div class="design-circle"></div>
+                </div>
+            </div>
+            <div class="about-grid-container">
+                <div class="about-item about-right"></div>
+                <div class="about-item about-left">
+                    <h2>About Me</h2>
+                    <p>Hi, I’m Charles Arabia! I’m currently a college student at PLMUN, where I’m pursuing my passion for design and development. I love creating websites that are simple, clean, and sleek, with a focus on delivering real value to users. <br><br> Over time, I’ve had the chance to work with clients, and I’m proud to say that the results have been outstanding. I’m committed to meeting deadlines, staying within budget, and ensuring my clients are happy with the work I deliver. Let’s create something amazing together!</p>
+                    <button id="resume" onclick="showMessage()">Learn More</button>
+                    <br>
+                    <h3>Programming Language and Tools</h3>
+                    <div class="tools-main">
+                        <div class="programming-container">
+                            <div class="tool">
+                                <p class="html">HTML</p>
+                            </div>
+                            <div class="tool">
+                                <p class="css">CSS</p>
+                            </div>
+                            <div class="tool">
+                                <p class="javascript">JavaScript</p>
+                            </div>
+                            <div class="tool">
+                                <p class="php">PHP</p>
+                            </div>
+                            <div class="tool">
+                                <p class="mysql">MySQL</p>
+                            </div>
+                            <div class="tool">
+                                <p class="vsc">Visual Studio Code</p>
+                            </div>
+                            <div class="tool">
+                                <p class="gt">GitHub</p>
+                            </div>
+                            <div class="tool">
+                                <p class="figma">Figma</p>
+                            </div>
+                            <div class="tool">
+                                <p class="html">HTML</p>
+                            </div>
+                            <div class="tool">
+                                <p class="css">CSS</p>
+                            </div>
+                            <div class="tool">
+                                <p class="javascript">JavaScript</p>
+                            </div>
+                            <div class="tool">
+                                <p class="php">PHP</p>
+                            </div>
+                            <div class="tool">
+                                <p class="mysql">MySQL</p>
+                            </div>
+                            <div class="tool">
+                                <p class="vsc">Visual Studio Code</p>
+                            </div>
+                            <div class="tool">
+                                <p class="gt">GitHub</p>
+                            </div>
+                            <div class="tool">
+                                <p class="figma">Figma</p>
+                            </div>
+                            <div class="tool">
+                                <p class="html">HTML</p>
+                            </div>
+                            <div class="tool">
+                                <p class="css">CSS</p>
+                            </div>
+                            <div class="tool">
+                                <p class="javascript">JavaScript</p>
+                            </div>
+                            <div class="tool">
+                                <p class="php">PHP</p>
+                            </div>
+                            <div class="tool">
+                                <p class="mysql">MySQL</p>
+                            </div>
+                            <div class="tool">
+                                <p class="vsc">Visual Studio Code</p>
+                            </div>
+                            <div class="tool">
+                                <p class="gt">GitHub</p>
+                            </div>
+                            <div class="tool">
+                                <p class="figma">Figma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="works">
+        <div class="works-container">
+            <div class="works-grid-container">
+                <div class="works-item">
+                    <div class="project-container">
+                        <div class="project-item">
+                            <h2 class="works-intro">Projects</h2>
+                            <div class="first-pro">
+                                <h2>Retrofee</h2>
+                                <h5>E-commerce</h5>
+                                <p>Retrofee is an online coffee shop designed with a minimalist aesthetic, offering a seamless and intuitive user experience. The platform caters to three primary user roles: Customer, Employee, and Admin. Each role has specific functionalities tailored to their needs, ensuring efficient order management, status tracking, and sales analysis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="slideshow-container">
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/coover/1.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/Retrofee/1.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/Retrofee/2.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/Retrofee/3.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/Retrofee/4.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/Retrofee/5.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/Retrofee/6.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-item">
+                    <div class="project-container">
+                        <div class="project-item">
+                            <div class="slideshow-container">
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/coover/2.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/TravelTour(img)/1.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/TravelTour(img)/2.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/TravelTour(img)/3.png" alt="">
+                                </div>
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/TravelTour(img)/4.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/TravelTour(img)/5.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/TravelTour(img)/6.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/TravelTour(img)/7.png" alt="">
+                                </div>
+                        </div>
+                        <div class="project-item  reverse">
+                            <h2>Travel Tour</h2>
+                            <h5>Booking</h5>
+                            <p>Travel Tour is a booking system that helps you plan your perfect getaway. Choose from beach, mountain, culture, or town destinations, and customize your trip based on your budget, group size, and travel dates. We handle the details, creating a personalized itinerary for a stress-free and memorable vacation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-item">
+                    <div class="project-container">
+                        <div class="project-item">
+                            <h2>Log Emotion</h2>
+                            <h5>Custom</h5>
+                            <p>Log Emotion is a simple and thoughtful app for tracking your daily moods. You can log how you’re feeling each day, and it helps you see patterns over weeks and months. Whether you’re reflecting on a tough day or celebrating a great one, it’s designed to help you understand your emotions and grow over time.</p>
+                        </div>
+                        <div class="project-item">
+                            <div class="slideshow-container">
+                                <div class="image-slides fade emo">
+                                    <img class="project-image" src="img/coover/4.png" alt="">
+                                </div>
+                                <div class="image-slides fade emo">
+                                    <img class="project-image" src="img/LogEmotion(img)/1.png" alt="">
+                                </div>
+                                <div class="image-slides fade emo">
+                                    <img class="project-image" src="img/LogEmotion(img)/2.png" alt="">
+                                </div>
+                                <div class="image-slides fadeemo">
+                                    <img class="project-image" src="img/LogEmotion(img)/3.png" alt="">
+                                </div>
+                                <div class="image-slides fade emo">
+                                    <img class="project-image" src="img/LogEmotion(img)/4.png" alt="">
+                                </div>
+                                <div class="image-slides fade emo">
+                                    <img class="project-image" src="img/LogEmotion(img)/5.png" alt="">
+                                </div>
+                                <div class="image-slides fade emo">
+                                    <img class="project-image" src="img/LogEmotion(img)/6.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works-item">
+                    <div class="project-container">
+                        <div class="project-item">
+                            <div class="slideshow-container">
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/coover/3.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/ELB(design)/1.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/ELB(design)/2.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/ELB(design)/3.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/ELB(design)/4.png" alt="">
+                                </div>
+                                <div class="image-slides fade">
+                                    <img class="project-image" src="img/ELB(design)/5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-item reverse">
+                            <h2>ELP</h2>
+                            <h5>Web Design</h5>
+                            <p>East London Printers is a modern and visually captivating web design project created with Figma. It’s all about making the printing business shine online, with a clean, easy-to-use layout that lets visitors quickly find what they need. The design is professional yet approachable, focusing on a smooth and enjoyable experience for anyone exploring their services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="services">
+        <div class="serv-content">
+
+            <div class="serv-main">
+                <h2 class="serv-intro">Service</h2>
+                <div class="serv-container">
+                    <div class="serv-item">
+                        <img class="serv-image" src="icon/development.png" alt="">
+                        <h5>Web Development</h5>
+                        <p>Clean, functional, and user-friendly websites.</p>
+                    </div>
+                    <div class="serv-item">
+                        <img class="serv-image" src="icon/web-design.png" alt="">
+                        <h5>Web Design</h5>
+                        <p>Visually appealing and intuitive designs.</p>
+                    </div>
+                    <div class="serv-item">
+                        <img class="serv-image" src="icon/ui.png" alt="">
+                        <h5>UI Design</h5>
+                        <p>Crafting engaging and easy-to-navigate interfaces.</p>
+                    </div>
+                    <div class="serv-item">
+                        <img class="serv-image" src="icon/ux.png" alt="">
+                        <h5>UX Design</h5>
+                        <p>Creating seamless and enjoyable user experiences.</p>
+                    </div>
+                    <div class="serv-item">
+                        <img class="serv-image" src="icon/responsive.png" alt="">
+                        <h5>Responsive Design</h5>
+                        <p>Flawless performance on all devices.</p>
+                    </div>
+                    <div class="serv-item">
+                        <img class="serv-image" src="icon/content.png" alt="">
+                        <h5>Maintenance</h5>
+                        <p>Keeping sites updated, secure, and functional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <div class="section-main">
+            <div class="get">
+                <h2>Get In Touch</h2>
+                <p>Need a sleek, modern website or a fresh, eye-catching design? Whether you have a clear vision or just the spark of an idea, I’m here to help bring it to life. Let’s collaborate to create something that not only looks stunning but also works seamlessly for your audience.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h5>Contact Information</h5>
+                    <p>Feel free to contact us! I'm always grateful to contact with you, whether it's about a project, a cooperation idea, or simply a friendly chat. You may reach me by email, phone, or social media—let us work together to create something amazing!</p>
+                    <p><i class="fa-solid fa-phone"></i> +63452678560</p>
+                    <p><i class="fa-solid fa-envelope"></i> charlesarabia25@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Almanza Dos, Las pinas City </p>
+                </div>
+                <div class="contact-message">
+                    <div class="contact-name">
+                        <input type="text" placeholder="Your Firstname">
+                        <input type="text" placeholder="Your Lastname">
+                    </div>
+                    <input type="email" placeholder="Email" class="email-input">
+                    <textarea placeholder="Write your message here!"
+                        style="height: 100px;resize: none; text-align: left; padding: 10px;"></textarea>
+                    <button>Send Massage</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="footer">
+        <div class="foot">
+            <div class="footer-img">
+                <img src="img/CA-letter-logo.png" alt="">
+            </div>
+
+        </div>
+        <div class="soc">
+            <div class="soc-med">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Loop through each slideshow container
+    document.querySelectorAll(".slideshow-container").forEach((container) => {
+        let slideIndex = 0;
+        const slides = container.querySelectorAll(".image-slides");
+        const dots = container.parentElement.querySelector(".dots-container")?.querySelectorAll(".dot");
+
+        function showSlides(index) {
+            if (index >= slides.length) slideIndex = 0;
+            else if (index < 0) slideIndex = slides.length - 1;
+            else slideIndex = index;
+
+            // Remove active and prev classes from all slides
+            slides.forEach((slide) => {
+                slide.classList.remove("active", "prev");
+            });
+
+            // Add the "prev" class to the current slide before moving it out
+            if (slides[slideIndex - 1] || slideIndex === 0) {
+                const prevSlide = slideIndex === 0 ? slides[slides.length - 1] : slides[slideIndex - 1];
+                prevSlide.classList.add("prev");
+            }
+
+            // Add the "active" class to the new slide
+            slides[slideIndex].classList.add("active");
+
+            // Update dots (if dots exist)
+            if (dots) {
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle("dot-active", i === slideIndex);
+                });
+            }
+        }
+
+        function nextSlide() {
+            showSlides(slideIndex + 1);
+        }
+
+        // Add event listeners to dots (if dots exist)
+        if (dots) {
+            dots.forEach((dot, i) => {
+                dot.addEventListener("click", () => showSlides(i));
+            });
+        }
+
+        // Start slideshow for this container
+        showSlides(slideIndex);
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    });
+});
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".about-item");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show"); // Add animation class
+                        observer.unobserve(entry.target); // Stop observing after first animation
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".works-item");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show-works"); // Add animation class
+                        observer.unobserve(entry.target); // Stop observing after first animation
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".serv-item");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add("show-section"); // Add animation class
+                        }, index * 200); // Delay increases per section
+                        observer.unobserve(entry.target); // Stop observing after first animation
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".contact-info");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add("show-info"); // Add animation class after delay
+                            observer.unobserve(entry.target); // Stop observing after first animation
+                        }, 700); // 1.5s delay
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".contact-message");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add("show-message"); // Add animation class after delay
+                            observer.unobserve(entry.target); // Stop observing after first animation
+                        }, 700); // 1.5s delay
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script>
+        const nav = document.getElementById("nav");
+        function toggleNav(x) {
+            nav.style.left = nav.style.left === "0px" ? "-100%" : "0px";
+            x.classList.toggle("change");
+        }
+        function closeNav() {
+            const elements = document.querySelectorAll(".container"); // Gets all elements with class "container"
+            document.getElementById("nav").style.left = "-100%"; // Close the nav
+            // Loop through all elements and remove "change" class
+            elements.forEach(el => {
+                el.classList.remove("change");
+            });
+        }
+    </script>
+    <script src="js/popup.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Loop through each slideshow container
+    document.querySelectorAll(".slideshow-container").forEach((container) => {
+        let slideIndex = 0;
+        const slides = container.querySelectorAll(".image-slides");
+        const dots = container.parentElement.querySelector(".dots-container")?.querySelectorAll(".dot");
+
+        function showSlides(index) {
+            if (index >= slides.length) slideIndex = 0;
+            else if (index < 0) slideIndex = slides.length - 1;
+            else slideIndex = index;
+
+            // Remove active and prev classes from all slides
+            slides.forEach((slide) => {
+                slide.classList.remove("active", "prev");
+            });
+
+            // Add the "prev" class to the current slide before moving it out
+            if (slides[slideIndex - 1] || slideIndex === 0) {
+                const prevSlide = slideIndex === 0 ? slides[slides.length - 1] : slides[slideIndex - 1];
+                prevSlide.classList.add("prev");
+            }
+
+            // Add the "active" class to the new slide
+            slides[slideIndex].classList.add("active");
+
+            // Update dots (if dots exist)
+            if (dots) {
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle("dot-active", i === slideIndex);
+                });
+            }
+        }
+
+        function nextSlide() {
+            showSlides(slideIndex + 1);
+        }
+
+        // Add event listeners to dots (if dots exist)
+        if (dots) {
+            dots.forEach((dot, i) => {
+                dot.addEventListener("click", () => showSlides(i));
+            });
+        }
+
+        // Start slideshow for this container
+        showSlides(slideIndex);
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    });
+});
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".about-item");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show"); // Add animation class
+                        observer.unobserve(entry.target); // Stop observing after first animation
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".works-item");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show-works"); // Add animation class
+                        observer.unobserve(entry.target); // Stop observing after first animation
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".serv-item");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add("show-section"); // Add animation class
+                        }, index * 200); // Delay increases per section
+                        observer.unobserve(entry.target); // Stop observing after first animation
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".contact-info");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add("show-info"); // Add animation class after delay
+                            observer.unobserve(entry.target); // Stop observing after first animation
+                        }, 700); // 1.5s delay
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSections = document.querySelectorAll(".contact-message");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add("show-message"); // Add animation class after delay
+                            observer.unobserve(entry.target); // Stop observing after first animation
+                        }, 700); // 1.5s delay
+                    }
+                });
+            }, { threshold: 0.3 });
+            aboutSections.forEach(section => observer.observe(section));
+        });
+    </script>
